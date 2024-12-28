@@ -30,8 +30,8 @@ Ensure you have the following installed:
 ### Run Directly from Source
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/andrew-inzer/comparus-task.git
+   cd comparus-task
    ```
 
 2. Run the application:
