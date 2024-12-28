@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Comparus Task
+
+app:
+  data-sources:
+    - name: db1
+      driver: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://${DB1_HOST:localhost}:3306/testdb
+      user: testuser
+      password: testpass
+      table: users
+      mapping:
+        id: user_id
+        username: login
+        name: first_name
+        surname: last_name
+    - name: db2
+      driver: org.postgresql.Driver
+      url: jdbc:postgresql://${DB2_HOST:localhost}:5432/testdb
+      user: testuser
+      password: testpass
+      table: user_table
+      mapping:
+        id: ldap_login
+        username: ldap_login
+        name: name
+        surname: surname
